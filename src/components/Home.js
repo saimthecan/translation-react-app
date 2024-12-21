@@ -263,7 +263,7 @@ const Home = () => {
 
   return (
     <Container maxWidth="lg" sx={{ mt: 5 }}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} >
         {/* Birinci sütun: Detected Language Sekmesi + Input */}
         <Grid item xs={12} md={6}>
           {/* Detected Language Sekmesi */}
@@ -314,6 +314,7 @@ const Home = () => {
                 resize: "none",
                 outline: "none",
                 boxSizing: "border-box",
+                marginTop:"6.2px"
               }}
             />
             {inputText && (

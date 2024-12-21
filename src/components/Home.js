@@ -322,7 +322,7 @@ const Home = () => {
                 onClick={clearInput}
                 sx={{
                   position: "absolute",
-                  top: "1.2rem",
+                  top: "0.8rem",
                   right: "10px",
                   backgroundColor: "rgba(255, 255, 255, 0.9)",
                   color: "rgba(0, 0, 0, 0.5)",
@@ -421,7 +421,7 @@ const Home = () => {
                 onClick={handleCopyTranslation}
                 sx={{
                   position: "absolute",
-                  top: "1.2rem",
+                  top: "0.6rem",
                   right: "10px",
                   backgroundColor: "rgba(255, 255, 255, 0.9)",
                   color: "rgba(0, 0, 0, 0.5)",

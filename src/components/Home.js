@@ -88,7 +88,7 @@ const Home = () => {
         setTranslatedText("Translating...");
         // 1) Dil algılama
         const languageResponse = await axios.post(
-          "http://127.0.0.1:5000/detect-language",
+          "https://translation-canozgen-8f135668af13.herokuapp.com//detect-language",
           {
             text_to_detect: text,
           }
@@ -99,7 +99,7 @@ const Home = () => {
 
         // 2) Çeviri
         const translateResponse = await axios.post(
-          "http://127.0.0.1:5000/translate",
+          "https://translation-canozgen-8f135668af13.herokuapp.com//translate",
           {
             text_to_translate: text,
             target_language: getCurrentTargetLanguageCode(),
@@ -128,7 +128,7 @@ const Home = () => {
         setTranslatedText("Translating...");
         // Dil algılama
         const languageResponse = await axios.post(
-          "http://127.0.0.1:5000/detect-language",
+          "https://translation-canozgen-8f135668af13.herokuapp.com//detect-language",
           {
             text_to_detect: pastedText,
           }
@@ -139,7 +139,7 @@ const Home = () => {
 
         // Çeviri
         const translateResponse = await axios.post(
-          "http://127.0.0.1:5000/translate",
+          "https://translation-canozgen-8f135668af13.herokuapp.com//translate",
           {
             text_to_translate: pastedText,
             target_language: getCurrentTargetLanguageCode(),
@@ -163,7 +163,7 @@ const Home = () => {
     if (inputText.trim() !== "") {
       try {
         setTranslatedText("Translating...");
-        const response = await axios.post("http://127.0.0.1:5000/translate", {
+        const response = await axios.post("https://translation-canozgen-8f135668af13.herokuapp.com//translate", {
           text_to_translate: inputText,
           target_language: displayedLanguages[newValue].code,
         });
@@ -202,7 +202,7 @@ const Home = () => {
 
     if (inputText.trim() !== "") {
       try {
-        const response = await axios.post("http://127.0.0.1:5000/translate", {
+        const response = await axios.post("https://translation-canozgen-8f135668af13.herokuapp.com//translate", {
           text_to_translate: inputText,
           target_language: langCode,
         });
@@ -241,7 +241,7 @@ const Home = () => {
     setTranslatedText("Translating...");
 
     axios
-      .post("http://127.0.0.1:5000/translate", {
+      .post("https://translation-canozgen-8f135668af13.herokuapp.com//translate", {
         text_to_translate: inputText,
         target_language: lang,
       })
